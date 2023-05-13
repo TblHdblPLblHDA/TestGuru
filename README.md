@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Сущности проекта TestGuru:
+
+    1. Пользователь
+
+    2. Опрос
+
+    3. Тест
+
+    4. Вопрос
+
+    5. Ответ
