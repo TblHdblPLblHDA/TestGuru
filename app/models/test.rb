@@ -1,11 +1,9 @@
 class Test < ApplicationRecord
-  belongs_to :category
-  has_many :test_passages
-  has_many :users, through: :test_passages
-  has_many :questions
-
-  def self.sorted_tests_by_category(category_name)
-    tests = Test.joins(:category).where(categories: { name: category_name })
-    tests.order(title: :desc).pluck(:title)
+  def change
+    create_table :user_tests do |t|
+      t.references :user, null: false, foreign_key: true
+      t.references :test, null: false, foreign_key: true
+      t.timestamps
+    end
   end
 end
