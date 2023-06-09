@@ -10,16 +10,15 @@
 User.create([
     {name: 'Kate', email: 'kate@example.com', password: '123456'},
     {name: 'John', email: 'connor@gmail.com', password: '123456'}
-    {name: 'Mike', email: 'mike@example.com', password: '123456'}
   ])
 
-# Создаем категории
+
 Category.create([
     {title:'front'},
     {title:'back'}
   ])
 
-# Создаем тесты
+
 Test.create([
     {title:'Ruby on Rails', level: 1, category_id:2},
     {title:'Node.js', level: 2, category_id:2},
@@ -28,7 +27,7 @@ Test.create([
     {title:'CSS Grid', level: 2, category_id:1}
     ])
 
-# Создаем ответы
+
 UserTest.create([
     {user_id:1, test_id: 1},
     {user_id:1, test_id: 2},
@@ -37,8 +36,4 @@ UserTest.create([
     {user_id:2, test_id: 4}
   ])
 
-# Создаем ответы
-#Answer.create(body: '1939', question: question1, correct: true)
-#nswer.create(body: 'Japan', question: question2, correct: false)
-#Answer.create(body: 'a2+b2=c2', question: question3, correct: true)
-#Answer.create(body: 'Mikhail Gorbachev', question: question4, correct: true)
+
