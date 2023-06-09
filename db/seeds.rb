@@ -8,8 +8,8 @@
 # Создаем пользователей
 
 User.create([
-    {name: 'Kate', email: 'kate@example.com', password: '123456'},
-    {name: 'John', email: 'connor@gmail.com', password: '123456'}
+    {name: 'Kate', email: 'kate@example.com'},
+    {name: 'John', email: 'connor@gmail.com'}
   ])
 
 
