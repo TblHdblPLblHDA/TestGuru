@@ -1,9 +1,9 @@
 class Test < ApplicationRecord
-  def change
-    create_table :user_tests do |t|
-      t.references :user, null: false, foreign_key: true
-      t.references :test, null: false, foreign_key: true
-      t.timestamps
-    end
+  def self.titles_on_category(category)
+    Test
+    .joins("INNER JOIN categories ON tests.category_id = categories.id")
+    .where('categories.title = ?',category)
+    .order(title: :desc)
+    .pluck(:title)
   end
 end
