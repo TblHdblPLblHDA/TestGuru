@@ -13,6 +13,8 @@
 <<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 2023_06_08_133838) do
 =======
+ActiveRecord::Schema.define(version: 2023_05_13_110918) do
+>>>>>>> Stashed changes
 
   create_table "answers", force: :cascade do |t|
     t.text "body", null: false
